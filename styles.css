@@ -1,8 +1,16 @@
 body {
     margin: 0;
-    background-color: gray;
 }
 
+h1 {
+    font-size: 38px;
+    font-family: sans-serif;
+    color: #1E8ACB;
+}
+
+p{
+    font-size: 18px;
+}
 /* Header area & main navigation */
 
 .site-nav {
@@ -11,6 +19,7 @@ body {
     padding: 0 2em;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     overflow: hidden;
@@ -73,6 +82,11 @@ body {
     color: white;
 }
 
+.content-container{
+    max-width: 1300px;
+    padding-left: 6em;  
+}
+
 /* Main Content */
 
 .main-content {
@@ -80,6 +94,88 @@ body {
     flex-direction: column;
 }
 
+/* Hero area */
 .hero-area {
-    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 90vh;
+    background-image: url('/images/hero_desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 2rem;
+}
+
+.hero-image-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.clinic-image {
+    width: 400px;
+    height: auto;
+    display: block;
+    box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.5);
+}
+
+.clinic-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    max-width: 420px;
+    gap: 1rem;
+}
+
+.hero-button {
+    padding: 20px 80px;
+    background-color: #46C8BA;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+/* Service area */
+.service-area {
+    height: 90vh;
+    background-color: #46C8BA;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.about-area {
+    height: 90vh;
+    background-color: whitesmoke;
+}
+
+.contact-area {
+    position: relative;
+    height: 45vh;
+    overflow: hidden;
+}
+
+.contact-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/contact.jpg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    z-index: -1;
 }
