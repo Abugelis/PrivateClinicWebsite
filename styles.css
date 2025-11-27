@@ -10,8 +10,21 @@ h1 {
 
 p{
     font-size: 18px;
+    font-family: sans-serif;
+}
+
+a{
+    font-size: 20px;
+    font-family: sans-serif;
 }
 /* Header area & main navigation */
+
+header{
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 2000;
+}
 
 .site-nav {
     width: 100%;
@@ -22,16 +35,15 @@ p{
     justify-content: space-between;
     position: sticky;
     top: 0;
-    overflow: hidden;
     background-color: white;
     box-sizing: border-box;
+    z-index: 1000;
 }
 .main-nav {
     margin-left:5em;
     padding: 0;
     list-style: none;
     font: 1.2em sans-serif;
-    
     display: flex;
     flex: 1;
 }
@@ -134,7 +146,13 @@ p{
     align-items: start;
     text-align: left;
     max-width: 420px;
-    gap: 1rem;
+    gap: 3rem;
+}
+
+.hero-content h1,
+.hero-content p,
+.hero-content a {
+    margin: 0;
 }
 
 .hero-button {
@@ -143,16 +161,78 @@ p{
     color: white;
     text-decoration: none;
     border-radius: 40px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-button:hover{
+    text-decoration: none;
+    background-color: #1E8ACB;
+    border: 1px solid #1E8ACB;
+    border-radius: 40px;
+    color: white;
 }
 
 /* Service area */
 .service-area {
     height: 90vh;
-    background-color: #46C8BA;
-    display: flex;
-    flex-direction: row;
+    background-color: #a0faf188;
 }
 
+.service-area .content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 6rem;
+    padding-top: 100px;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.service-image{
+    width: 350px;
+    height: auto;
+}
+
+.service-image img {
+    height: auto;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex: 0 0 500px;
+    margin-top: 5em;
+}
+
+.service-content h1,
+.service-content p {
+    margin: 0;
+}
+
+.service-button {
+    padding: 20px 80px;
+    background-color: #1E8ACB;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    width: 140px;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.service-button:hover {
+    text-decoration: none;
+    background-color: #46C8BA;
+    border: 1px solid #46C8BA;
+    border-radius: 40px;
+    color: white;
+}
 
 .about-area {
     height: 90vh;
