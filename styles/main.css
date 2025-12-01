@@ -357,18 +357,7 @@ header{
 }
 
 .footer-links a:hover {
-    text-decoration: none;
-    color: #46C8BA;
-}
-
-.footer-contact a {
-    color: #1E8ACB;
-    text-decoration: none;
-}
-
-.footer-contact a:hover {
-    color: #46C8BA;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .designer-tag {
