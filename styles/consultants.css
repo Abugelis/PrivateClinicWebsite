@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 38px;
+    font-family: sans-serif;
+    color: #1E8ACB;
+}
+
+p {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+a {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+/* Header & Navigation */
+
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 2000;
+}
+
+.site-nav {
+    width: 100%;
+    margin: 0 ;
+    padding: 0 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+.main-nav {
+    margin-left:5em;
+    padding: 0;
+    list-style: none;
+    font: 1.2em sans-serif;
+    display: flex;
+    flex: 1;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    margin-right: 2em;
+}
+
+.main-nav a {
+    padding: 0.5em 1em;
+    display: block;
+    
+    text-decoration: none;
+    color: #46C8BA;
+}
+
+.main-nav a:hover {
+    color: #1E8ACB;
+    text-decoration: underline;
+    text-underline-offset: 1em;
+}
+
+
+.button {
+    margin-left: auto;
+    margin-right: 5em;
+    border: 1px solid #46C8BA;
+    border-radius: 25px;
+    background-color: #46C8BA;
+}
+
+.button a {
+    display:block;
+    padding: 0.5em 1em;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.button a:hover {
+    text-decoration: none;
+    background-color: #1E8ACB;
+    border: 1px solid #1E8ACB;
+    border-radius: 25px;
+    color: white;
+}
+
+.content-container {
+    max-width: 1300px;
+    padding-left: 6em;  
+}
+
+/* Consultant Area (image) */
+
+.consultant-area {
+    position: relative;
+    height: 45vh;
+    overflow: hidden;
+}
+
+.consultant-area h1 {
+    font-size: 62px;
+    text-align: center;
+    margin: 0;
+    padding-top: 90px;
+    margin-bottom: 1rem;
+}
+
+.breadcrumb {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    width: 100%;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #1E8ACB;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+    color: #46C8BA;
+}
+
+.consultant-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/consultants-imagee.jpg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Consultant Greeting */
+
+.consultant-greeting h2 {
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 42px;
+    color: #1E8ACB;
+}
+
+.consultant-greeting p {
+    text-align: center;
+}
+
+/* Specialists Grid */
+
+.specialists-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2.5rem;
+    padding: 5rem 0 5rem 0;
+}
+
+.specialist-card {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    color: #1E8ACB;
+    border: 1px solid rgba(128, 128, 128, 0.100);
+}
+
+.specialist-card:hover {
+    background-color: white;
+    box-shadow: 0 0 12px  rgba(0, 0, 0, 0.349);
+}
+
+.doctor-bio {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1E8ACB;
+    padding: 1rem;
+}
+
+.doctor-bio:hover {
+    color: #46C8BA;
+}
+
+.speciality-link {
+    color: #46C8BA;
+    text-decoration: none;
+    padding-bottom: 1rem;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: whitesmoke;
+    padding: 3rem 2rem 2rem 2rem;
+    font-family: sans-serif;
+    color:black;
+}
+
+.footer-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.footer-logo {
+    width: 140px;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #1E8ACB;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #46C8BA;
+}
+
+.footer-contact a {
+    color: #1E8ACB;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #46C8BA;
+}
+
+.designer-tag {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #1E8ACB;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

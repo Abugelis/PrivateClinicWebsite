@@ -274,6 +274,21 @@ header{
     overflow: hidden;
 }
 
+.contact-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/contact.jpg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    z-index: -1;
+}
+
 .contact-flex {
     display: flex;
     align-items: center;
@@ -287,8 +302,8 @@ header{
 .contact-button{
     border: solid #1E8ACB;
     border-radius: 40px;
-    padding: 20px 80px;
-    width: 140px;
+    padding: 20px 60px;
+    width: 150px;
     background-color: #1E8ACB;
     color: white;
     text-decoration: none;
@@ -304,20 +319,6 @@ header{
     color: white;
 }
 
-.contact-area::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/images/contact.jpg');
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(5px);
-    z-index: -1;
-}
 
 /* Footer */
 
@@ -357,7 +358,16 @@ header{
 }
 
 .footer-links a:hover {
-    text-decoration: underline;
+    color: #46C8BA;
+}
+
+.footer-contact a {
+    color: #1E8ACB;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #46C8BA;
 }
 
 .designer-tag {
