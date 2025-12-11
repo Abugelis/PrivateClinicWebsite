@@ -384,3 +384,33 @@ header{
     font-size: 0.9rem;
     opacity: 0.8;
 }
+
+/* Privacy Policy */
+/* Cookies */
+
+.policy h1,h2,h3{
+    color: #1E8ACB;
+}
+
+.policy ul {
+    font-size: 1.2rem;
+}
+
+.policy a {
+    color: #1E8ACB;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.policy a:hover {
+    color: #46C8BA;
+}
+
+.foot-note {
+    font-size: 1rem;
+    color: #555;
+}
+
+.policy {
+    padding: 3rem;
+}
