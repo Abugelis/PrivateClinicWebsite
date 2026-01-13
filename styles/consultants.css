@@ -1,0 +1,690 @@
+.consultant-area {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 45vh;
+        overflow: hidden;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+.consultant-area::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/images/consultants-image.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(5px);
+        z-index: -1;
+    }
+
+    .consultant-area h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 90%;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .breadcrumb {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
+        width: 90%;
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+    }
+
+    .breadcrumb a {
+        text-decoration: none;
+        color: #1E8ACB;
+    }
+
+    .consultant-greeting {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 4rem;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+
+    .specialists-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 80%;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 4rem 0;
+    }
+
+    .specialist-card {
+        background-color: white;
+        padding: 1rem;
+        text-align: center;
+        color: #1E8ACB;
+        border: 1px solid rgba(128, 128, 128, 0.100);
+        box-shadow: 1px 1px 10px rgb(167, 166, 166);
+    }
+
+    .doctor-bio {
+        display: block;
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #1E8ACB;
+        padding: 1rem;
+    }
+
+    .speciality-link {
+        color: #46C8BA;
+        text-decoration: none;
+        padding-bottom: 1rem;
+    }
+
+
+    /* ------------------------- Contact Page --------------------------------------*/
+
+    .contact-message a.contact-us-button {
+        border: solid #46C8BA;
+        border-radius: 2rem;
+        padding: 1rem 4rem;
+        background-color: #46C8BA;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+        background-color: #d0f7f3;
+        padding: 4rem 0;
+    }
+
+
+    .contact-left-column {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+        align-items: center;
+    }
+
+    .contact-left-column a {
+        text-decoration: none;
+        color: #1E8ACB;
+        padding-top: 1rem;
+    }
+
+    .contact-right-column {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+        align-items: center;
+    }
+
+    .contact-right-column a {
+        text-decoration: none;
+        color: #1E8ACB;
+        padding-top: 1rem;
+    }
+
+    .map h2 {
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    iframe {
+        height: 400px;
+    }
+
+    .contact-message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 1rem;
+        padding: 4rem 0;
+    }
+
+    .contact-message p > a {
+        text-decoration: none;
+        color: #46C8BA;
+    }
+
+
+    /* -------------------------------------------- PROFILE PAGE -------------------------------------*/
+
+    .profile-area {
+        max-width: 90%;
+        align-items: center;
+        margin: 0 auto;
+        padding: 4rem 0;
+    }
+
+    .profile-header h2 {
+        color: #46C8BA;
+    }
+
+    .profile-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .left-column img {
+        box-shadow: 1px 1px 10px;
+    }
+
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .contact-box a {
+        text-decoration: none;
+        color: #1E8ACB;
+    }
+
+    .contact-box a:hover {
+        color: #46C8BA;
+    }
+
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .bio ul > li{
+        font-size: 1.2rem;
+        list-style:disc;
+        list-style-position: inside;
+    }
+
+    /* ----------------------------------------------------- LEGAL PAGES  ----------------------------------------------*/
+
+    .policy {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 4rem 0;
+    }
+
+@media (min-width: 1024px) {
+
+    body {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 38px;
+        font-family: sans-serif;
+        color: #1E8ACB;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+
+    a {
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+    /* Header & Navigation */
+
+    header {
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 2000;
+    }
+
+    .site-nav {
+        width: 100%;
+        margin: 0 ;
+        padding: 0 2em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    .logo img {
+        height: 80px;
+        width: auto;
+        margin-right: 2em;
+    }
+
+    .nav-links > a:hover {
+        color: #1E8ACB;
+        text-decoration: underline;
+        text-underline-offset: 1em;
+    }
+
+
+    .button {
+        margin-left: auto;
+        margin-right: 5em;
+        border: 1px solid #46C8BA;
+        border-radius: 25px;
+        background-color: #46C8BA;
+    }
+
+    .button a {
+        display:block;
+        padding: 0.5em 1em;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 25px;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .button a:hover {
+        text-decoration: none;
+        background-color: #1E8ACB;
+        border: 1px solid #1E8ACB;
+        border-radius: 25px;
+        color: white;
+    }
+
+    .content-container {
+        max-width: 1300px;
+        padding-left: 6em;  
+    }
+
+    /* Consultant Area (image) */
+
+    .consultant-area {
+        position: relative;
+        height: 45vh;
+        overflow: hidden;
+    }
+
+    .consultant-area h1 {
+        font-size: 62px;
+        text-align: center;
+        margin: 0;
+        padding-top: 90px;
+        margin-bottom: 1rem;
+    }
+
+    .breadcrumb {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
+        width: 100%;
+    }
+
+    .breadcrumb a {
+        text-decoration: none;
+        color: #1E8ACB;
+    }
+
+    .breadcrumb a:hover {
+        text-decoration: none;
+        color: #46C8BA;
+    }
+
+    .consultant-area::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/images/consultants-imagee.jpg');
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(5px);
+        z-index: -1;
+    }
+
+    /* Consultant Greeting */
+
+    .consultant-greeting {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 4rem 0 0 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .consultant-greeting h2 {
+        font-size: 2rem;
+    }
+
+    /* Specialists Grid */
+
+    .specialists-grid {
+        max-width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 2.5rem;
+        padding: 5rem 0 5rem 0;
+    }
+
+    .specialist-card {
+        background-color: white;
+        padding: 1rem;
+        text-align: center;
+        color: #1E8ACB;
+        border: 1px solid rgba(128, 128, 128, 0.100);
+    }
+
+    .specialist-card:hover {
+        background-color: white;
+        box-shadow: 0 0 12px  rgba(0, 0, 0, 0.349);
+    }
+
+    .doctor-bio {
+        display: block;
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #1E8ACB;
+        padding: 1rem;
+    }
+
+    .doctor-bio:hover {
+        color: #46C8BA;
+    }
+
+    .speciality-link {
+        color: #46C8BA;
+        text-decoration: none;
+        padding-bottom: 1rem;
+    }
+
+    /* Footer */
+
+    .site-footer {
+        background-color: whitesmoke;
+        padding: 3rem 2rem 2rem 2rem;
+        font-family: sans-serif;
+        color:black;
+    }
+
+    .footer-grid {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .footer-logo {
+        width: 140px;
+        margin-bottom: 1rem;
+    }
+
+    .footer-links ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .footer-links li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+        color: #1E8ACB;
+        text-decoration: none;
+    }
+
+    .footer-links a:hover {
+        color: #46C8BA;
+    }
+
+    .footer-contact a {
+        color: #1E8ACB;
+        text-decoration: none;
+    }
+
+    .footer-contact a:hover {
+        color: #46C8BA;
+    }
+
+    .designer-tag {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        opacity: 0.7;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid #1E8ACB;
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+
+    /* Profile Styles */
+
+    .profile-area {
+        max-width: 90%; 
+    }
+
+    .profile-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        align-items: flex-start;
+        padding: 4rem 1rem;
+    }
+
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 300px;
+    }
+
+    .right-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profile-photo {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-area h2 {
+        color: #46C8BA;
+        font-family: sans-serif;
+    }
+
+    .profile-area h3 {
+        color: #1E8ACB;
+        font-family: sans-serif;
+    }
+
+    .profile-area ul {
+        font-size: 18px;
+        color: rgba(9, 20, 58, 0.733);
+        font-family: sans-serif;
+        line-height: 1.2;
+    }
+
+    .profile-area p {
+        color: rgba(9, 20, 58, 0.733);
+        line-height: 1.2;
+    }
+
+    .contact-box a {
+        color: #1E8ACB;
+        text-decoration: none;
+    }
+
+    .contact-box a:hover {
+        color: #46C8BA;
+    }
+
+    .map {
+        max-width: 100%;
+    }
+
+    .map h2 {
+        text-align: center;
+        color: #1E8ACB;
+        font-family: sans-serif;
+        font-size: 38px;
+    }
+
+    /* Contact page */
+
+    .contact-message {
+        position: relative;
+        height: 45vh;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .contact-message h2 {
+        color: #1E8ACB;
+        font-size: 38px;
+        font-family: sans-serif;
+        padding-top: 2rem;
+    }
+
+    .contact-message p {
+        font-family: sans-serif;
+        padding-bottom: 2rem;
+    }
+
+    .contact-message a {
+        color: #1E8ACB;
+        text-decoration: none;
+    }
+
+    .contact-message a:hover {
+        color: #46C8BA;
+    }
+
+    .contact-message a.contact-us-button {
+        border: solid #46C8BA;
+        border-radius: 2rem;
+        padding: 1rem 4rem;
+        background-color: #46C8BA;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .contact-message a.contact-us-button:hover {
+        background-color: #1E8ACB;
+        border-color: #1E8ACB;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #d0f7f3;
+        max-width: 100%;
+        margin: 0;
+        gap: 4rem;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .contact-details {
+        gap: 10rem;
+    }
+
+    .contact-left-column {
+        gap: 0.5rem;
+    }
+
+    .contact-left-column h3 {
+        font-size: 2rem;
+    }
+
+    .contact-left-column p{
+        font-size: 1.4rem;
+    }
+
+    .contact-left-column a {
+        padding-top: 2rem;
+    }
+
+    .contact-right-column {
+        gap: 0.5rem;
+    }
+
+    .contact-right-column p{
+        font-size: 1.4rem;
+    }
+
+    .contact-right-column a {
+        padding-top: 2rem;
+    }
+
+    .map h2 {
+        padding: 2rem 0;
+    }
+
+    iframe {
+        height: 600px;
+    }
+
+    .profile-grid {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-column {
+        margin: 0 auto;
+    }
+}

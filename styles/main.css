@@ -62,8 +62,9 @@ header {
 }
 
 .logo img{
-    height: 60px;
+    height: 80px;
     width: auto;
+    margin-right: 2em;
 }
 
 /* --------------------------------------- Home Hero ----------------------------------------- */
@@ -258,6 +259,7 @@ header {
 .site-footer {
     display: flex;
     flex-direction: column;
+    background-color: whitesmoke;
 }
 
 .footer-brand {
@@ -370,7 +372,7 @@ header {
         display: none;
     }
 
-    .main-nav a:hover {
+    .nav-links > a:hover {
         color: #1E8ACB;
         text-decoration: underline;
         text-underline-offset: 1em;
@@ -389,6 +391,7 @@ header {
 
     .nav-links a {
         font-weight: 400;
+        color: #46C8BA;
     }
 
     .nav-btn {
@@ -397,10 +400,16 @@ header {
         border: 1px solid #47c9bb;
         padding: 0.8rem 1.2rem;
         border-radius: 2rem;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
     }
 
     .nav-btn a {
         color: white;
+    }
+
+    .nav-btn:hover {
+        background-color: #1E8ACB;
+        border: 1px solid #1E8ACB;
     }
 
     .button {
@@ -455,15 +464,13 @@ header {
         padding: 4rem 2rem;
     }
 
-    
-
     .hero-image-container {
         position: relative;
         display: inline-block;
     }
 
     .clinic-image {
-        width: 300px;
+        width: 400px;
         height: auto;
         display: block;
         box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.5);
