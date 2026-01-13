@@ -5,7 +5,7 @@ A simple HTML/CSS project modeled after real private clinic website. First full 
 
 ## Features
 
-- Desktop-first layout (planned mobile-first improvements in future projects)
+- Responsive design (reworked)
 - Clean and simple design
 - Content generated with AI
 - Royalty-free images
@@ -15,6 +15,7 @@ A simple HTML/CSS project modeled after real private clinic website. First full 
 
 - HTML
 - CSS
+- JS
 
 
 ## Screenshots
@@ -30,6 +31,12 @@ A simple HTML/CSS project modeled after real private clinic website. First full 
 
 ### Contact Us
 ![Contact](/screenshots/contact.png)
+
+### Mobile Home
+![Mobile_Home](/screenshots/mobile-home.png)
+
+### Mobile Consultants
+![Mobile_Consultants](/screenshots/mobile-consultants.png)
 
 
 ## Lessons Learned
