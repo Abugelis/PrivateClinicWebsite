@@ -3,27 +3,28 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <script src="/js/nav.js" defer></script>
         <link rel="icon" href="/images/favicon.png">
+        <link rel="stylesheet" href="/styles/base.css">
         <link rel="stylesheet" href="/styles/main.css">
         <title>Blue Cross Private Clinic</title>
     </head>
     <body>
         
         <header>
-            <div class="content-container">
-                <nav class="site-nav">
-                    <a href="/" class="logo">
-                        <img src="/images/logo.png" alt="Clinic logo">
-                    </a>
+            <nav class="site-nav">
+                <a href="/index.html" class="logo"><img src="/images/logo.png" alt="Clinic logo"></a>
 
-                    <ul class="main-nav">
-                        <li><a href="index.html">Our Clinic</a></li>
-                        <li><a href="consultants.html">Our Consultants</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li class="button"><a href="/consultants.html">Find Consultant</a></li>
-                    </ul>
-                </nav>
-            </div>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="hamburger"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#47c9bb" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#47c9bb" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#47c9bb" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+
+                <div class="nav-links">
+                    <a href="/index.html">Our Clinic</a>
+                    <a href="/consultants.html">Our Consultants</a>
+                    <a href="/contact.html">Contact</a>
+                    <button class="nav-btn"><a href="/consultants.html">Find Consultant</a></button>
+                </div>
+            </nav>
         </header>
 
         <main class="main-content">
@@ -31,7 +32,7 @@
                 <div class="content-container">
                     <div class="hero-image-container">
                         <img src="/images/clinic.jpg" alt="Clinic image" class="clinic-image">
-                        <img src="/images/logo.png" alt="Logo" class="clinic-logo">
+                        <img src="/images/logo.png" alt="Logo" class="hero-logo">
                     </div>
                     <div class="hero-content">
                         <h1>Welcome to Blue Cross Private Clinic, Cork, Ireland</h1>
@@ -51,7 +52,7 @@
                             chronic disease management, minor illness and injury treatment, 
                             preventive health screenings, vaccinations, and coordinated referrals 
                             to specialist services when needed.</p>
-                        <a href="#" class="service-button">Our Location</a>
+                        <a href="/contact.html" class="service-button">Our Location</a>
                     </div>
                 </div>
             </section>
@@ -65,7 +66,9 @@
 
                     <div class="about-grid">
                         <div class="about-item">
-                            <img src="/images/medical-team.png" class="icon" alt="Medical team">
+                            <div class="icon-wrap">
+                                <img src="/images/medical-team.png" class="icon" alt="Medical team">
+                            </div>
                             <div>
                                 <h2>Experienced Team</h2>
                                 <p>Our doctors have 10+ years experience on average.</p>
@@ -73,7 +76,9 @@
                         </div> 
 
                         <div class="about-item">
-                            <img src="/images/monitor.png" class="icon" alt="Equipment">
+                            <div class="icon-wrap">
+                                <img src="/images/monitor.png" class="icon" alt="Equipment">
+                            </div>
                             <div>
                                 <h2>State of the Art Equipment</h2>
                                 <p>Our clinic uses best and latest equipment.</p>
@@ -81,7 +86,9 @@
                         </div>
 
                         <div class="about-item">
-                            <img src="/images/business.png" class="icon" alt="Location">
+                            <div class="icon-wrap">
+                                <img src="/images/business.png" class="icon" alt="Location">
+                            </div>
                             <div>
                                 <h2>Convienient Location</h2>
                                 <p>We are located in the city center</p>
@@ -89,7 +96,9 @@
                         </div>
 
                         <div class="about-item">
-                            <img src="/images/coffee.png" class="icon" alt="Coffee">
+                            <div class="icon-wrap">
+                                <img src="/images/coffee.png" class="icon" alt="Coffee">
+                            </div>
                             <div>
                                 <h2>Cafe and Car park</h2>
                                 <p>Use our free for clinic customers car park and cafe that is located inside the clinic</p>
@@ -109,6 +118,7 @@
             </section>
         </main>
         <footer class="site-footer">
+            <div class="footer-separator"></div>
             <div class="footer-grid">
 
                 <div class="footer-brand">

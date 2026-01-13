@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+p {
+    font-family: serif; 
+    font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3 {
+    color: #1f8bcc;
+    font-family: sans-serif;
+}
+
+.content-container {
+    max-width: 90%;
+    margin: 0 auto;
+}
